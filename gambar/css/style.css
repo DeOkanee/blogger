@@ -95,7 +95,7 @@ form {
 }
 
 .i {
-	color: #d1d1d1;
+	color: #ffffff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -171,6 +171,9 @@ form {
 
 .input-div.pass {
 	margin-bottom: 4px;
+}
+.input-div div input::placeholder{
+	color: #2b2b2b;
 }
 
 a{
