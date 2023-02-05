@@ -1,0 +1,64 @@
+:root {
+  box-sizing: border-box;
+}
+
+html,
+body,
+* {
+  font-family:  'Monaco' !important;
+	font-weight: 300 !important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-image: url(../img/aa.jpg);
+}
+
+#app {
+  height: 100vh;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:  auto;
+  border: 7px solid rgb(0, 0, 0);
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  border-radius: 3em;
+  background-color: rgb(75, 164, 224);
+}
+
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option {
+  width: 30%;
+  margin: 40px 15px;
+  padding: 25px;
+  text-align: center;
+  font-size: 40px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(10, 63, 179);
+  border-radius: 4em;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: rgb(33, 196, 60);
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+  transform: scale(105%);
+  -webkit-transform: scale(105%);
+  -moz-transform: scale(105%);
+  -ms-transform: scale(105%);
+  -o-transform: scale(105%);
+  -webkit-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+  -moz-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+  -ms-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+  -o-transition: cubic-bezier(0.215, 0.61, 0.355, 1) ease-in-out;
+}

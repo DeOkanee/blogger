@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#4f6b88" />
+    <meta name="msapplication-navbutton-color" content="#4f6b88" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4f6b88" />
+
+    <link rel="shortcut icon" href="assets/img/prof.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!--slide foto-->
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="assets/slide CSS JS/slide.css" />
+    <!--slide foto-->
+    <!--scropt-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- icon sosial -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Profile De Oka</title>
+  </head>
+
+  <body class="bg-light">
+    <main class="m-auto pt-5 pb-1">
+      <section class="container profile text-center">
+        <img src="assets/img/avatar oka.png" />
+        <h3>DE&nbsp;OKA</h3>
+        <div class="blog">
+          <p>
+            Hai 👋, selamat datang di profile De oka😇
+            <br />
+            ini adalah profile yang dibuat secara otodidak<br />saat otak saya
+            ada keinginan untuk membuatnya hehe 😄
+            <br />
+            <br />
+            o(〃＾▽＾〃)o
+          </p>
+        </div>
+      </section>
+      <section class="container text-center">
+        <!--audio gif-->
+        <div class="gif">
+          <p>| Fred Punya Musik |</p>
+          <!--AUDIO-->
+          <audio
+            id="Music"
+            src="https://f.top4top.io/m_2588gtwwr1.mp3">
+          </audio>
+          <button id="play">🎵</button>
+          <button id="stop">❌</button>
+
+          <script>
+            // Variabel untuk memuat element audio dan tombol
+            const audioElement = document.getElementById("Music");
+            const playButton = document.getElementById("play");
+            const stopButton = document.getElementById("stop");
+
+            // Fungsi untuk memutar musik
+            function playMusic() {
+              audioElement.play();
+            }
+            // Fungsi untuk menghentikan musik
+            function stopMusic() {
+              audioElement.pause();
+              audioElement.currentTime = 0;
+            }
+            // Event listener untuk tombol play
+            playButton.addEventListener("click", playMusic);
+
+            // Event listener untuk tombol stop
+            stopButton.addEventListener("click", stopMusic);
+          </script>
+          <!--AUDIO-->
+          <br />
+          <img src="https://i.postimg.cc/Tw2B9Fz1/a.gif" /><img
+            src="https://i.gifer.com/yB.gif"
+          />
+        </div>
+        <br />
+      </section>
+
+      <!--slide foto-->
+      <div class="bgslide">
+        <h1>Beberapa Dari semua :)</h1>
+        <div class="slider">
+          <div>
+            <a href="#">
+              <img src="assets/slideimg/1 OKA.jpg" alt="Image 1" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="assets/slideimg/G 1.jpg" alt="Image 2" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="assets/slideimg/G 2.jpg" alt="Image 3" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="assets/slideimg/G 3.jpg" alt="Image 4" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="assets/slideimg/G 4.jpg" alt="Image 5" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="assets/slideimg/G 5.jpg" alt="Image 6" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="assets/slideimg/G 6.jpg" alt="Image 7" />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="assets/slideimg/G 7.jpg" alt="Image 8" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- JQuery -->
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      ></script>
+
+      <!-- Slick JS -->
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+
+      <!-- Our Script -->
+      <script src="assets/slide CSS JS/javascript.js"></script>
+      <!--silde foto-->
+
+      <script>
+        //Audio
+        function play() {
+          var audio = new Audio("https://c.top4top.io/m_2532yurxt1.mp3");
+          audio.play(), Audio("https://l.top4top.io/m_2533hogru1.mp3");
+          audio.play();
+        }
+
+        const swals = Swal.mixin({
+          cancelButtonColor: "#DC143C",
+          confirmButtonColor: "#00008B",
+          allowOutsideClick: false,
+        });
+        const swap = iloveu.mixin({
+          cancelButtonColor: "#909090",
+          confirmButtonColor: "#2B2B2B",
+          allowOutsideClick: true,
+        });
+      </script>
+      <!--Audio-->
+      <!--Muncul awal-->
+      <script>
+        async function start() {
+          await swals.fire("Halo ツ");
+          await Swal.fire("Welocome To...");
+          setTimeout(mulai, 900);
+          play();
+        }
+        start();
+
+        function showDiv() {
+          document.getElementById("fotogoy").style.animation =
+            "fotogoy 2s ease infinite";
+          document.getElementById("Content").style.opacity = "5";
+        }
+
+        function mulai() {
+          ketiknm();
+          showDiv();
+        }
+
+        function ketiknm() {
+          document.getElementById("pergeseran").style.opacity = "1";
+          document.getElementById("pergeseran").style.visibility = "visible";
+          document.getElementById("pergeseran").tyle.margin = "10px 0";
+        }
+      </script>
+
+      <!--Muncul awal-->
+      <!--slider-->
+      <section class="container text center">
+        <div class="title">
+          <h2>Game</h2>
+        </div>
+        <div class="geser" id="pergeseran">
+          <p><i>Geser &nbsp;</i>&#128073;</p>
+          <p>Gunting Batu Kertas &#128073; <a href="game/GBK">GAS</a></p>
+          <p>Tic Tac Aee &#128073; <a href="game/tic tac teo">GAS</a></p>
+          <p>
+            Permainan Kartu &#128073;
+            <a href="game/permainan kartu/index.html">GAS</a>
+          </p>
+          <p>
+            Chat debot &#128073; <a href="game/chat debot/index.html">GAS</a>
+          </p>
+          <p>
+            Game lainya &#128073;
+            <a href="https://www.addictinggames.com/">GAS</a>
+          </p>
+          <p>LAGI PROSES</p>
+        </div>
+      </section>
+      <!-- sosial -->
+      <section class="fh5co-social">
+        <div class="site-container">
+          <div class="social">
+            <h5>Follow me :)</h5>
+            <div class="social-icons">
+              <a
+                class="sosial"
+                href="https://www.facebook.com/oka.kembarisna.9"
+              >
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+              <a class="sosial" href="https://wa.me/6285738187967">
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+              <a
+                class="sosial"
+                href="https://instagram.com/okaneebeee?igshid=YmMyMTA2M2Y="
+              >
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a
+                class="sosial"
+                href="https://instagram.com/ini0ka?igshid=YmMyMTA2M2Y="
+              >
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </div>
+            <h5>Enjoyy..........</h5>
+          </div>
+        </div>
+      </section>
+      <!-- sosial -->
+      <footer>
+        <div class="bawah">
+          <p align="center">
+            © Deokanee | |
+            <a
+              href="mailto:tessdulu8@gmail.com?subject=Berapa%20Persen%20Anda%20Suka%20Dengan%20Web%20Saya%20? &body=Dari 1-100%%20berapa? = ' '"
+              >Ratting</a
+            >
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login Dulu Baru Masuk</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="gambar/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="shortcut icon" href="gambar/img/prof.png" />
+  </head>
+  <body>
+    <main class="m-auto pt-5 pb-1">
+    <div class="container" >
+      <div class="login-content">
+        <form method="get" action="/weeb2/web.html" id="login-form" >
+          <img src="gambar/img/avatar.svg " />
+          <h2 class="title">Welcome&nbsp;To<br />My&nbsp;Profile</h2>
+          <p class="title">Rarisang 👇🏿</p>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="div">
+              <input
+                type="text"
+                class="inputa"
+                name=""
+                value=""
+                id="username"
+                placeholder="Username"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-div pass">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div class="div">
+              <input
+                type="password"
+                class="inputa"
+                name=""
+                value=""
+                id="password"
+                placeholder="Password 4 to 8"
+                minlength="4"
+                maxlength="8"
+                required
+              />
+            </div>
+          </div>
+            <div class="box">
+              <input 
+                type="checkbox" 
+                class="form-check-input"
+                id="show-password"
+                />
+              &nbsp;Show&nbsp;Password 
+            </div>
+          <div class="btn">
+            <input type="submit" class="btn" value="Login"/>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Login succes-->
+    <script>
+      const form = document.getElementById("login-form");
+
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+
+          const inputs = form.getElementsByTagName("input");
+          window.location.href = "/weeb2/web.html";
+          for (let i = 0; i < inputs.length; i++) {
+            if (!inputs[i].value) {
+              alert("Silakan masukan Username dan Passwordnya");
+              return;
+            }
+          }
+
+          alert("Login successfully!");
+        });
+    </script>
+    <!--Login succes-->
+
+    <script type="text/javascript" src="gambar/js/main.js"></script>
+    <!-- okaa -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#show-password").click(function () {
+          if ($(this).is(":checked")) {
+            $("#password").attr("type", "text");
+          } else {
+            $("#password").attr("type", "password");
+          }
+        });
+      });
+    </script>
+    </main>
+  </body>
+</html>

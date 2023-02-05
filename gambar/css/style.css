@@ -1,0 +1,270 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("/gambar/img/walpaper.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	height: auto;
+	width: 100%;
+	padding: 35px;
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%,-50%);
+ 	text-align: center;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.img {
+	display: flex ;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content {
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+	align-items: center;
+}
+
+form {
+	background-color: rgba(255, 255, 255, 0.411);
+	text-align: center;
+	width: 340px;
+	height: 530px;
+	padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	border: 5px solid #0c8f47;
+	padding-top: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	border-radius: 4em;
+	border-style: solid;
+	box-shadow: 3px 3px 15px 5px #d8d4d4;
+
+}
+
+.login-content img {
+	margin-top: 10px;
+	width: 80px;
+	height: 80px;
+}
+
+.login-content h2 {
+	margin-top: 0;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: Cambria;
+	text-align: center;
+}
+
+.login-content p {
+	line-height: 2, 3rem;
+	margin-bottom: 25px;
+	color: rgb(54, 52, 52);
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: Cambria;
+	text-align: center;
+}
+
+.login-content .input-div {
+	position: relative;
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 20px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #585858;
+}
+
+.login-content .input-div.one {
+	margin-top: 0;
+}
+
+.i {
+	color: #d1d1d1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i {
+	transition: .3s;
+}
+
+.input-div>div {
+	position: relative;
+	height: 45px;
+	color: #00a862;
+}
+
+.input-div>div> {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: rgb(102, 102, 102);
+	font-size: 12px;
+	transition: .3s;
+}
+
+.input-div:before,
+.input-div:after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #19b667;
+	transition: .4s;
+}
+
+.input-div:before {
+	right: 50%;
+}
+
+.input-div:after {
+	left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+	width: 50%;
+}
+
+.input-div.focus>div>h5 {
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus>.i>i {
+	color: #00af5d;
+}
+
+.input-div>div>input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: rgb(0, 0, 0);
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass {
+	margin-bottom: 4px;
+}
+
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: rgb(189, 0, 0);
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+a:hover{
+	color: #32be8f;
+}
+
+.box {
+	text-align: left;
+	display: block;
+	font-size: 1.0rem;
+	width: 100%;
+	height: 50px;
+	outline: none;
+	border: none;
+	color: rgb(10, 10, 10);
+	font-family: 'Poppins', sans-serif;
+	margin: 1rem 0 1rem 0 ;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #38d39f, #38d39f, #32be8f);
+	background-size: 100%;
+	font-size: 1.2rem;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin-top: 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn:hover {
+	background-position: center;
+}
+
+
+@media screen and (max-width: 1050px) {
+	.container {
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	form {
+		width: 330px;
+		height: 560px;
+	}
+
+	.login-content h2 {
+		font-size: 2rem;
+		margin: 8px 0;
+	}
+
+	
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	.wave {
+		display: none;
+	}
+
+	.login-content {
+		justify-content: center;
+	}
+}
+
+a, button, input[type=submit] {
+	font-family: Georgia;
+	font-size: 20px;
+	background: #00bb83;
+	color: rgb(255, 255, 255);
+	border-radius: 25px;
+	padding: 12px 20px;
+	margin-top: 5px;
+	text-align: center;
+
+}
+

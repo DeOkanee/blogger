@@ -1,0 +1,74 @@
+.bgslide {
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.slider .slick-slide {
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.slider .slick-slide img {
+    width: 100%;
+}
+
+/* make button larger and change their positions */
+.slick-prev,
+.slick-next {
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 5px;
+}
+
+.slick-next {
+    right: 5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 40px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* move dotted nav position */
+.slick-dots {
+    bottom: 15px;
+}
+
+/* enlarge dots and change their colors */
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #dedede;
+}
+
+/* hide dots and arrow buttons when slider is not hovered */
+.slider:not(:hover) .slick-arrow,
+.slider:not(:hover) .slick-dots {
+    opacity: 0;
+}
+
+/* transition effects for opacity */
+.slick-arrow,
+.slick-dots {
+    transition: opacity 0.5s ease-out;
+}
