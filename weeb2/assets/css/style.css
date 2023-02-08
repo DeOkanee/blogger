@@ -40,7 +40,7 @@ body {
 
 .gif p {
   font-size: clamp(16px, 3vw, 20px);
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 6px;
   color: rgb(61, 183, 240);
   text-align: center;
@@ -48,7 +48,7 @@ body {
 
 @media (max-width:991px) {
   .profile h3 {
-    font-size: calc(1vw + 1.5rem);
+    font-size: calc(1vw + 1.3rem);
   }
 
   .blog p {
